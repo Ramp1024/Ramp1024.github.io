@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Venus Space Tour</title>
+    <link rel="stylesheet" href="css/planet.css">
+    <script src="js/booking.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full-planet">
+        <div class="star"></div>
+        <img src="images/venus.jpg" class="planet-image" />
+        <div class="planet-content">
+            <h2>Venus</h2>
+            <p>After all, with an average surface temperature of 462°C, the weather on Venus is always hot.
+                What’s more, with an atmospheric water content of just 20 ppm,
+                you’ll never have to cancel any outdoor activities because of rain!
+                <br />
+                There are few more beautiful placesto spend Springtime than the scenic lowlands of Guinivere Planitia.
+                Speaking of mountain climbing, Venus is an excellent destination for it. None of the low gravity on
+                other worlds – with a surface gravity of 8.87 m/s, Venusian gravity is
+                nearly as strong as the gravity back home on Earth, giving a true climbing experience.
+            </p>
+            <div class="planet-booking">
+                <div>
+                    <div>
+                        <label>Enter your name:</label><br />
+                        <input id="booking_name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </div>
+                    <div>
+                        <label>Mail Address:</label> <br />
+                        <input placeholder="Your MailId" type="email" tabindex="3" required>
+                    </div>
+                    <div>
+                        <p>Flight Availability: YES</p>
+                    </div>
+                    <div>
+                        <p id="confirmed" onclick="booked()" class="book_confirm">Confirm Booking</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Start Date:</label> <br />
+                        <input type="date" id="start_time">
+                    </div>
+                    <div>
+                        <label>End Date:</label> <br />
+                        <input type="date" id="end_time">
+                    </div>
+                    <div>
+                        <label>Total No.of Seats:</label> <br />
+                        <input type="number" id="total_seats">
+                    </div>
+                    <div>
+                        <p>Cost per head: <span id="book_cost">82,000</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <h2>Booking Confirmed</h2>
+                    <span class="close">&times;</span>
+                    <p id="booking_summary"></p>
+                    <p>Our technical staff will contact you regarding the next steps.</p>
+                    <h1>HAPPY JOURNEY</h1>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

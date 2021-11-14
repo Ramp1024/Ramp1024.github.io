@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uranus Space Tour</title>
+    <link rel="stylesheet" href="css/planet.css">
+    <script src="js/booking.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full-planet">
+        <div class="star"></div>
+        <img src="images/uranus.jpg" class="planet-image" />
+        <div class="planet-content">
+            <h2>Uranus</h2>
+            <p>The gas (and ice) giant known as Uranus is a fascinating place. The seventh planet from out Sun,
+                Uranus is the third-largest in terms of size, the fourth-largest in terms of mass, and one of
+                the least dense objects in our Solar System. <br />
+                You might be surprised to know that you can see Uranus without a telescope. At magnitude 5.3,
+                Uranus is just within the brightness scale that a human eye can perceive.<br />
+                Uranus has no solid surface. Instead, ammonia, methane, and water ices comprise most of Uranus. ...
+                Therefore, living on Uranus will be limited to the outer cloud top layers.
+            </p>
+            <div class="planet-booking">
+                <div>
+                    <div>
+                        <label>Enter your name:</label><br />
+                        <input id="booking_name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </div>
+                    <div>
+                        <label>Mail Address:</label> <br />
+                        <input placeholder="Your MailId" type="email" tabindex="3" required>
+                    </div>
+                    <div>
+                        <p>Flight Availability: YES</p>
+                    </div>
+                    <div>
+                        <p id="confirmed" onclick="booked()" class="book_confirm">Confirm Booking</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Start Date:</label> <br />
+                        <input type="date" id="start_time">
+                    </div>
+                    <div>
+                        <label>End Date:</label> <br />
+                        <input type="date" id="end_time">
+                    </div>
+                    <div>
+                        <label>Total No.of Seats:</label> <br />
+                        <input type="number" id="total_seats">
+                    </div>
+                    <div>
+                        <p>Cost per head: <span id="book_cost">2085,000</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <h2>Booking Confirmed</h2>
+                    <span class="close">&times;</span>
+                    <p id="booking_summary"></p>
+                    <p>Our technical staff will contact you regarding the next steps.</p>
+                    <h1>HAPPY JOURNEY</h1>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

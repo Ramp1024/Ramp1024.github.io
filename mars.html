@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Space Tour</title>
+    <link rel="stylesheet" href="css/planet.css">
+    <script src="js/booking.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full-planet">
+        <div class="star"></div>
+        <img src="images/mars.jpg" class="planet-image" />
+        <div class="planet-content">
+            <h2>MARS</h2>
+            <p>Mars is the epic travel destination for all space tourists.
+                It's nearly earthly environment and great tourist attractions
+                mean that you are in for an absolutely great visual treat.<br /> <br />
+                The first stop on our tour is Mars' North Pole, which includes
+                an ice cap bigger than Texas.
+                Later on the trip, we'll visit Olympus Mons, the tallest volcano in
+                the solar system, which is three times as tall as Mount Everest.
+                We'll also visit Valles Marines, the largest canyon in the solar system,
+                which runs the length of New York to Los Angeles.
+            </p>
+            <div class="planet-booking">
+                <div>
+                    <div>
+                        <label>Enter your name:</label><br />
+                        <input id="booking_name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </div>
+                    <div>
+                        <label>Mail Address:</label> <br />
+                        <input placeholder="Your MailId" type="email" tabindex="3" required>
+                    </div>
+                    <div>
+                        <p>Flight Availability: YES</p>
+                    </div>
+                    <div>
+                        <p id="confirmed" onclick="booked()" class="book_confirm">Confirm Booking</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Start Date:</label> <br />
+                        <input type="date" id="start_time">
+                    </div>
+                    <div>
+                        <label>End Date:</label> <br />
+                        <input type="date" id="end_time">
+                    </div>
+                    <div>
+                        <label>Total No.of Seats:</label> <br />
+                        <input type="number" id="total_seats">
+                    </div>
+                    <div>
+                        <p>Cost per head: <span id="book_cost">382,000</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <h2>Booking Confirmed</h2>
+                    <span class="close">&times;</span>
+                    <p id="booking_summary"></p>
+                    <p>Our technical staff will contact you regarding the next steps.</p>
+                    <h1>HAPPY JOURNEY</h1>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

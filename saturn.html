@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saturn Space Tour</title>
+    <link rel="stylesheet" href="css/planet.css">
+    <script src="js/booking.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full-planet">
+        <div class="star"></div>
+        <img src="images/saturn.jpg" class="planet-image" />
+        <div class="planet-content">
+            <h2>Saturn</h2>
+            <p>Saturn's overwhelming observational attraction is its stunning system of rings. From Earth, three
+                distinct,
+                major rings can be seen encircling Saturn's equator. As a gas giant, Saturn doesn't have a true surface.
+                The planet is mostly swirling gases and liquids deeper down. While a spacecraft would have nowhere to
+                land on Saturn, it wouldn't be able to fly through unscathed either.
+                <br />
+                research by scientists apparently shows that it rains diamonds on Jupiter and Saturn. ...
+                According to the research lightning storms on the planets turn methane into soot which hardens into
+                chunks of graphite and then diamonds as it falls.
+            </p>
+            <div class="planet-booking">
+                <div>
+                    <div>
+                        <label>Enter your name:</label><br />
+                        <input id="booking_name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </div>
+                    <div>
+                        <label>Mail Address:</label> <br />
+                        <input placeholder="Your MailId" type="email" tabindex="3" required>
+                    </div>
+                    <div>
+                        <p>Flight Availability: YES</p>
+                    </div>
+                    <div>
+                        <p id="confirmed" onclick="booked()" class="book_confirm">Confirm Booking</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Start Date:</label> <br />
+                        <input type="date" id="start_time">
+                    </div>
+                    <div>
+                        <label>End Date:</label> <br />
+                        <input type="date" id="end_time">
+                    </div>
+                    <div>
+                        <label>Total No.of Seats:</label> <br />
+                        <input type="number" id="total_seats">
+                    </div>
+                    <div>
+                        <p>Cost per head: <span id="book_cost">1512,000</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <h2>Booking Confirmed</h2>
+                    <span class="close">&times;</span>
+                    <p id="booking_summary"></p>
+                    <p>Our technical staff will contact you regarding the next steps.</p>
+                    <h1>HAPPY JOURNEY</h1>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

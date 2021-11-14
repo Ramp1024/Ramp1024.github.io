@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Plans</title>
+    <link rel="stylesheet" href="css/handmade.css">
+    <script src="js/handmade.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="handmadeFull">
+        <a href="home.html" class="go-back">
+            <img src="images/arrow.png" width="30px" height="25px" />
+            <p>Go Back</p>
+        </a>
+        <h2 class="handmadeHead">Our Curated Plans</h2>
+        <div class="fullPlans">
+            <div class="singlePlan">
+                <img src="images/downsouth.jpg" width="100%" height="30%" />
+                <div>
+                    <h2>Down South</h2>
+                    <p>Mars: Step foot on the Gale Crater and Mount Sharp, a crater created by the Curiosity Rover.
+                        <br />
+                        Saturn: Flyby Saturn's rings and try skydiving through Satrun's atmosphere.
+                        <br />
+                        Uranus: Pass through Uranus's 13 blue rings which are made of minute water ice particles. Tour
+                        through 3 of Uranus's moons, Titania,
+                        Miranda, Enceladus.
+                    </p>
+                    <div>
+                        <p id="confirmed" onclick="booked()" class="book_confirm">Confirm Booking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="singlePlan">
+                <img src="images/throughthemiddle.jpg" width="100%" height="30%" />
+                <div>
+                    <h2>Through the middle</h2>
+                    <p>Earth's Moon: Land at the exact landing site of the Apollo-11 and take a stroll round the Sea of
+                        Tranquility.
+                        <br />
+                        Mars: North Pole, Olympus Mons, Valles Marineris
+                        <br />
+                        Jupiter: Flyby 10 of the 63 moons with a near-view of the Io and the Europa and also the Great
+                        Red Spot on the surface of the planet.
+
+                    </p>
+                    <div>
+                        <p id="confirmed" onclick="booked()" class="book_confirm">Confirm Booking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="singlePlan">
+                <img src="images/downsouth.jpg" width="100%" height="30%" />
+                <div>
+                    <h2>Up the Alley</h2>
+                    <p>Earth's Moon: Visit the 5 large seas on the surface of the moon.
+                        <br />
+                        Venus: Fly over Baltis Vallis, the longest river channel in the entire solar system. View
+                        massifs from the
+                        Meitner Crater.
+                        <br />
+                        Mercury: Visit Caloris Basin, a site created 4 billion years ago and take the closest possible
+                        look of the Sun.
+                    </p>
+                    <div>
+                        <p id="confirmed" onclick="booked()" class="book_confirm">Confirm Booking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="singlePlan">
+                <img src="images/downsouth.jpg" width="100%" height="30%" />
+                <div>
+                    <h2>For the love of Moons</h2>
+                    <p>Earth's Moon: Mons Huygens, Tycho crater and all the 5 seas are all the places you'll be visiting
+                        during this trip.
+                        <br />
+                        Mars' Moon: Visit Phobos, Deimos the two exisiting moons of the planet.
+                        <br />
+                        Jupiter: Ganymede, Europa, Io and Callisto are the moons you'll be passing through during this
+                        journey.
+                    </p>
+                    <div>
+                        <p id="confirmed" onclick="booked()" class="book_confirm">Confirm Booking</p>
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <h2>Booking Confirmed</h2>
+                    <span class="close">&times;</span>
+                    <p id="booking_summary"></p>
+                    <p>Your Journey has been booked on 1-12-2021</p>
+                    <h3>Total Amount: $245,000</h3>
+                    <p>Our technical staff will contact you regarding the next steps.</p>
+                    <h1>HAPPY JOURNEY</h1>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
